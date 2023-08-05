@@ -10,7 +10,7 @@ html, body {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 175px 1fr;
 }
 
@@ -20,34 +20,63 @@ div .header {
 }
 
 div .sidebar {
-  background-color: rgb(53, 128, 199);
+  background-color: #ef4444;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 
   display: grid;
   grid-template-rows: 70px 240px 100px; 
+  gap: 25px;
 }
 
+
+#img-1, #img-2 {
+  filter: invert(1)
+}
 .side-heading,
+.side-middle div,
+.side-bottom div {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.side-heading {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+
 .side-middle,
 .side-bottom {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 27px;
 
   display: grid;
-  gap: 10px;
+  gap: 15px;
   align-content: start;
 }
 
 .side-heading {
   font-size: 25px;
   color: white;
+  margin-left: 15px;
+}
+
+#img-1 {
+  width: 50px;
 }
 
 .side-middle div,
 .side-bottom div {
   font-size: 18px;
   color: white;
+
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  align-items: center;
+}
+
+#img-2 {
+  width: 25px;
 }
 
 div .main-content {
@@ -58,6 +87,6 @@ div .main-content {
 
 
 /* For Visualization */
-.header, .sidebar, .main-content {
+.header, .main-content {
   border: 2px solid black;
 }
