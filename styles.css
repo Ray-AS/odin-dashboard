@@ -22,6 +22,46 @@ div .header {
   grid-template: 80px 100px / 1fr 300px;
 }
 
+.welcome {
+  display: grid;
+  grid-template-columns: 100px 300px;
+}
+
+#profile-bg {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(137, 86, 179);
+  border-radius: 50%;
+
+  justify-self: end;
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-1 {
+  width: 45px;
+}
+
+.welcome-message {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  margin-left: 20px;
+
+  align-self: center;
+}
+
+.top-welcome {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.bottom-welcome {
+  font-size: 20px;
+}
+
 div .sidebar {
   background-color: #ef4444;
   grid-column: 1 / 2;
@@ -33,7 +73,7 @@ div .sidebar {
 }
 
 
-#img-1, #img-2 {
+#img-2, #img-3 {
   filter: invert(1)
 }
 .side-heading,
@@ -64,7 +104,7 @@ div .sidebar {
   margin-left: 15px;
 }
 
-#img-1 {
+#img-2 {
   width: 50px;
 }
 
@@ -78,7 +118,7 @@ div .sidebar {
   align-items: center;
 }
 
-#img-2 {
+#img-3 {
   width: 25px;
 }
 
