@@ -130,7 +130,7 @@ div .header {
 
 .option-button {
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: bold;
   color: white;
   background-color: #d34040;
   width: 100px;
@@ -158,7 +158,7 @@ div .sidebar {
 .side-heading,
 .side-middle div,
 .side-bottom div {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .side-heading {
