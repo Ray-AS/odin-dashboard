@@ -11,15 +11,49 @@ html, body {
   height: 100%;
   display: grid;
   grid-template-columns: 275px 1fr;
-  grid-template-rows: 175px 1fr;
+  grid-template-rows: 165px 1fr;
 }
+
+/* HEADER */
 
 div .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
   display: grid;
-  grid-template: 80px 100px / 1fr 300px;
+  grid-template: 80px 85px / 1fr 300px;
+}
+
+#search-bar {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+}
+
+#query {
+  width: min(85%, 700px);
+  height: 40%;
+  background-color: rgb(226, 226, 226);
+  border: none;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+
+  align-self: center;
+}
+
+#query:focus {
+  outline: 2px solid black;
+}
+
+#search-button {
+  justify-self: end;
+  align-self: center;
+}
+
+#search-image {
+  width: 25px;
+  cursor: pointer;
 }
 
 .welcome {
@@ -41,7 +75,7 @@ div .header {
   align-items: center;
 }
 
-#img-1 {
+#pfp {
   width: 45px;
 }
 
@@ -62,6 +96,8 @@ div .header {
   font-size: 20px;
 }
 
+/* SIDEBAR */
+
 div .sidebar {
   background-color: #ef4444;
   grid-column: 1 / 2;
@@ -73,7 +109,7 @@ div .sidebar {
 }
 
 
-#img-2, #img-3 {
+#nav-buttons, #db-button {
   filter: invert(1)
 }
 .side-heading,
@@ -104,7 +140,7 @@ div .sidebar {
   margin-left: 15px;
 }
 
-#img-2 {
+#db-button {
   width: 50px;
 }
 
@@ -118,19 +154,14 @@ div .sidebar {
   align-items: center;
 }
 
-#img-3 {
+#nav-buttons {
   width: 25px;
 }
+
+/* CONTENT */
 
 div .main-content {
   background-color: rgb(226, 226, 226);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
-
-
-
-/* For Visualization */
-.main-content {
-  border: 2px solid black;
 }

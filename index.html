@@ -9,11 +9,16 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="search-bar" style="border: 2px solid black;"></div>
+        <form id="search-bar">
+          <div id="search-button">
+            <img src="images/search-button.svg" id="search-image">
+          </div>
+          <input type="search" id="query">
+        </form>
         <div class="account" style="border: 2px solid black;"></div>
         <div class="welcome">
           <div id="profile-bg">
-            <img src="images/profilepic.png" id="img-1">
+            <img src="images/profilepic.png" id="pfp">
           </div>
           <div class="welcome-message">
             <p class="top-welcome">Hi there,</p>
@@ -25,22 +30,22 @@
 
       <div class="sidebar">
         <div class="side-heading">
-          <img src="images/dashboard.svg" id="img-2"> Dashboard
+          <img src="images/dashboard.svg" id="db-button"> Dashboard
         </div>
 
         <div class="side-middle">
-          <div><img src="images/home.svg" id="img-3"> Home</div>
-          <div><img src="images/profile.svg" id="img-3"> Profile</div>
-          <div><img src="images/messages.svg" id="img-3"> Messages</div>
-          <div><img src="images/history.svg" id="img-3"> History</div>
-          <div><img src="images/tasks.svg" id="img-3"> Tasks</div>
-          <div><img src="images/communities.svg" id="img-3"> Communities</div>
+          <div><img src="images/home.svg" id="nav-buttons"> Home</div>
+          <div><img src="images/profile.svg" id="nav-buttons"> Profile</div>
+          <div><img src="images/messages.svg" id="nav-buttons"> Messages</div>
+          <div><img src="images/history.svg" id="nav-buttons"> History</div>
+          <div><img src="images/tasks.svg" id="nav-buttons"> Tasks</div>
+          <div><img src="images/communities.svg" id="nav-buttons"> Communities</div>
         </div>
 
         <div class="side-bottom">
-          <div><img src="images/settings.svg" id="img-3"> Settings</div>
-          <div><img src="images/support.svg" id="img-3"> Support</div>
-          <div><img src="images/privacy.svg" id="img-3"> Privacy</div>
+          <div><img src="images/settings.svg" id="nav-buttons"> Settings</div>
+          <div><img src="images/support.svg" id="nav-buttons"> Support</div>
+          <div><img src="images/privacy.svg" id="nav-buttons"> Privacy</div>
         </div>
       </div>
 
