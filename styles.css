@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 html, body {
@@ -21,7 +22,7 @@ div .header {
   grid-row: 1 / 2;
 
   display: grid;
-  grid-template: 80px 85px / 1fr 300px;
+  grid-template: 80px 85px / 1fr 325px;
 }
 
 #search-bar {
@@ -51,9 +52,24 @@ div .header {
   align-self: center;
 }
 
-#search-image {
-  width: 25px;
-  cursor: pointer;
+.account {
+  display: grid;
+  grid-template-columns: 60px 60px 150px;
+  align-items: center;
+  justify-items: center;
+}
+
+#profile-bg-1 {
+  width: 45px;
+  height: 45px;
+}
+
+#pfp-1 {
+  width: 31px;
+}
+
+.account-name {
+  font-weight: bold;
 }
 
 .welcome {
@@ -61,26 +77,19 @@ div .header {
   grid-template-columns: 100px 300px;
 }
 
-#profile-bg {
+#profile-bg-2 {
   width: 65px;
   height: 65px;
-  background-color: rgb(137, 86, 179);
-  border-radius: 50%;
 
   justify-self: end;
   align-self: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#pfp {
+#pfp-2 {
   width: 45px;
 }
 
 .welcome-message {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
   margin-left: 20px;
 
@@ -94,6 +103,19 @@ div .header {
 
 .bottom-welcome {
   font-size: 20px;
+}
+
+#search-image, #notification {
+  width: 25px;
+}
+
+#profile-bg-1, #profile-bg-2 {
+  background-color: rgb(137, 86, 179);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* SIDEBAR */
@@ -115,7 +137,6 @@ div .sidebar {
 .side-heading,
 .side-middle div,
 .side-bottom div {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
 }
 
